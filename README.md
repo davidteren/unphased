@@ -11,7 +11,7 @@ Unphased is a Chrome extension designed to correct out-of-phase audio issues in 
 
 ## Demo
 
-![Demo video](https://github.com/davidteren/unphased/blob/main/docs/unphased-demo1.mp4)
+![Demo video](https://youtu.be/E-las1kZxPY)
 
 ## Installation
 
