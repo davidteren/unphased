@@ -1,0 +1,61 @@
+/* Icon styles */
+.unphased-icon {
+    width: 128px;
+    height: 128px;
+    background: #4CAF50;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.unphased-icon::before,
+.unphased-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.unphased-icon::before {
+    width: 80%;
+    height: 80%;
+    background: white;
+}
+
+.unphased-icon::after {
+    width: 60%;
+    height: 60%;
+    background: #4CAF50;
+    transform: translate(-50%, -50%) rotate(45deg);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%);
+}
+
+/* Keyframes for pulsing effect */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Apply pulsing animation */
+.unphased-icon {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Styles for different sizes */
+.unphased-icon-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.unphased-icon-48 {
+    width: 48px;
+    height: 48px;
+}
+
+.unphased-icon-128 {
+    width: 128px;
+    height: 128px;
+}

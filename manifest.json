@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Unphased",
+  "version": "1.4",
+  "description": "Corrects out-of-phase audio issues in YouTube videos with options for phase inversion and mono output.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Unphased",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/unphased/icon.iconset/icon_16x16.png",
+      "32": "icons/unphased/icon.iconset/icon_32x32.png",
+      "48": "icons/unphased/icon.iconset/icon_32x32@2x.png",
+      "128": "icons/unphased/icon.iconset/icon_128x128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/unphased/icon.iconset/icon_16x16.png",
+    "32": "icons/unphased/icon.iconset/icon_32x32.png",
+    "48": "icons/unphased/icon.iconset/icon_32x32@2x.png",
+    "128": "icons/unphased/icon.iconset/icon_128x128.png",
+    "256": "icons/unphased/icon.iconset/icon_256x256.png",
+    "512": "icons/unphased/icon.iconset/icon_512x512.png"
+  }
+}
