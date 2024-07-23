@@ -9,6 +9,10 @@ Unphased is a Chrome extension designed to correct out-of-phase audio issues in 
   - **Easy-to-use Interface**: Simple buttons overlaid on YouTube pages for quick audio adjustments.
   - **Persistent Settings**: Audio settings persist while navigating between YouTube videos.
 
+## Demo
+
+![Demo video](https://github.com/davidteren/unphased/blob/main/docs/unphased-demo1.mp4?raw=true)
+
 ## Installation
 
 ### From Source (For Development)
