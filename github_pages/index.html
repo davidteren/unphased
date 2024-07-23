@@ -1,0 +1,158 @@
+
+
+<html><head><base href="https://unphased.io/" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unphased - YouTube Audio Phase Correction Extension</title>
+<style>
+  :root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFA500;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --card-bg: #2a2a2a;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .feature-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    background-color: var(--card-bg);
+  }
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <svg class="logo" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="var(--primary-color)"/>
+        <path d="M30 50 Q 50 30, 70 50 T 30 50" stroke="var(--secondary-color)" stroke-width="5" fill="none"/>
+        <circle cx="50" cy="50" r="5" fill="var(--secondary-color)"/>
+      </svg>
+      <h1>Unphased</h1>
+      <p class="description">Enhance your YouTube viewing experience with our audio phase correction extension. Unphased provides smart solutions for out-of-phase audio issues, ensuring crisp and clear sound quality.</p>
+    </header>
+
+    <div class="features">
+      <div class="feature-card">
+        <i class="fas fa-exchange-alt feature-icon" style="color: var(--primary-color);"></i>
+        <h3>Phase Inversion</h3>
+        <p>Correct out-of-phase stereo recordings with a single click.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-volume-up feature-icon" style="color: var(--secondary-color);"></i>
+        <h3>Mono Toggle</h3>
+        <p>Easily switch to mono audio to identify and resolve phase issues.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-mouse-pointer feature-icon" style="color: var(--primary-color);"></i>
+        <h3>User-Friendly Interface</h3>
+        <p>Simple overlay buttons for quick audio adjustments on YouTube.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-save feature-icon" style="color: var(--secondary-color);"></i>
+        <h3>Persistent Settings</h3>
+        <p>Your audio preferences are remembered across different videos.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="https://chrome.google.com/webstore/detail/unphased/extension-id" class="cta-button">Add to Chrome</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Unphased. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const logo = document.querySelector('.logo');
+      logo.addEventListener('mouseover', () => {
+        logo.style.animation = 'spin 2s linear infinite';
+      });
+      logo.addEventListener('mouseout', () => {
+        logo.style.animation = 'none';
+      });
+    });
+  </script>
+</body></html>
